@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="ClassJot Privacy Policy — information about local storage, teacher and student records, security, backups, and data deletion.">
+  <title>Privacy Policy | ClassJot</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f5f7fb;
+      --surface: #ffffff;
+      --text: #1b2a40;
+      --muted: #607088;
+      --accent: #1764e8;
+      --accent-pale: #edf4ff;
+      --border: #e0e7f0;
+      --shadow: 0 12px 42px rgba(26, 52, 90, .055);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font: 16px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { width: min(100% - 36px, 850px); margin: 0 auto; }
+    .topbar { background: var(--surface); border-bottom: 1px solid var(--border); }
+    .topbar-inner { display: flex; align-items: center; min-height: 67px; gap: 12px; }
+    .brand-icon {
+      display: inline-grid; place-items: center;
+      width: 38px; height: 38px; border-radius: 11px;
+      background: var(--accent); color: #fff; font-size: 17px;
+      font-weight: 800; letter-spacing: -.08em;
+    }
+    .brand { font-weight: 750; font-size: 1.1rem; letter-spacing: -.025em; }
+    main { padding: 38px 0 56px; }
+    .eyebrow { color: var(--accent); font-size: .78rem; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; }
+    h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.16; margin: 9px 0 13px; letter-spacing: -.045em; }
+    .intro { margin: 0 0 26px; color: var(--muted); max-width: 730px; font-size: 1rem; }
+    .paper { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
+    .meta { padding: 22px 27px; background: var(--accent-pale); border-bottom: 1px solid var(--border); }
+    .meta dl { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 7px 18px; margin: 0; }
+    dt { font-weight: 700; }
+    dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+    .content { padding: 13px 27px 30px; }
+    section { padding-top: 17px; scroll-margin-top: 20px; }
+    section + section { border-top: 1px solid var(--border); margin-top: 21px; }
+    h2 { font-size: 1.15rem; line-height: 1.4; margin: 0 0 12px; letter-spacing: -.015em; }
+    p { margin: 0 0 13px; }
+    p:last-child { margin-bottom: 0; }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+    .contact-grid { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 6px 15px; }
+    .contact-grid div:nth-child(odd) { font-weight: 700; }
+    .footer { color: var(--muted); font-size: .83rem; text-align: center; padding: 22px 0 35px; }
+    @media (max-width: 600px) {
+      .container { width: min(100% - 26px, 850px); }
+      main { padding: 26px 0 37px; }
+      .meta { padding: 18px; }
+      .meta dl { grid-template-columns: 1fr; gap: 1px; }
+      .meta dd:not(:last-child) { margin-bottom: 10px; }
+      .content { padding: 10px 19px 26px; }
+      section + section { margin-top: 19px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 1px; }
+      .contact-grid div:nth-child(even) { margin-bottom: 11px; }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #101823;
+        --surface: #192534;
+        --text: #edf3fc;
+        --muted: #b5c2d4;
+        --accent: #8db9ff;
+        --accent-pale: #1e3450;
+        --border: #36475d;
+        --shadow: none;
+      }
+      .brand-icon { background: #1764e8; }
+    }
+    @media print {
+      :root { --page: #fff; --surface: #fff; --text: #111; --muted: #444; --border: #ddd; --accent: #1754a8; --accent-pale: #f1f4f8; }
+      body { font-size: 11pt; }
+      .paper { box-shadow: none; border: 0; }
+      main { padding: 20px 0; }
+      .content, .meta { padding-left: 0; padding-right: 0; }
+      section { break-inside: avoid-page; }
+    }
+  .brand-icon svg {display:block;width:38px;height:38px;}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner" aria-label="ClassJot">
+      <span class="brand-icon" aria-hidden="true" style="background:transparent"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="38" height="38" aria-hidden="true" focusable="false"><path d="M320 104H205C99 104 20 184 20 281C20 381 103 461 207 461H221C238 421 260 392 295 370H205C153 370 112 330 112 280C112 231 152 196 204 196H288C306 196 320 182 320 164Z" fill="#1764E8"/><circle cx="416" cy="75" r="56" fill="#1764E8"/><path d="M381 146H447C459 146 467 155 467 168V325C467 402 405 461 330 461H232C249 415 278 389 317 380C359 375 381 352 381 310Z" fill="#28313D"/></svg></span>
+      <span class="brand">ClassJot</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="eyebrow">Privacy &amp; data protection</div>
+    <h1 id="policy-title">Privacy Policy</h1>
+    <p class="intro">How ClassJot handles teacher and student information, keeps classroom records on the device, and supports secure backups and deletion.</p>
+
+    <article class="paper" aria-labelledby="policy-title">
+      <div class="meta">
+        <dl>
+          <dt>Effective date</dt><dd><time datetime="2026-11-06">November 6, 2026</time></dd>
+          <dt>Application</dt><dd>ClassJot (<code>com.classjot.teacher</code>)</dd>
+          <dt>Developer / operator</dt><dd>Eram</dd>
+          <dt>Privacy contact</dt><dd><a href="mailto:er.am.1005@gmail.com">er.am.1005@gmail.com</a></dd>
+        </dl>
+      </div>
+
+      <div class="content">
+        <section aria-labelledby="about">
+          <h2 id="about">1. About ClassJot</h2>
+          <p>ClassJot is an offline-first classroom-management application designed for teachers. It helps teachers manage classes, seating plans, attendance, grades, classroom points, timetables, logbook entries, and related reports. The application is intended for teachers and school staff, not for students to create or use accounts themselves.</p>
+        </section>
+
+        <section aria-labelledby="information">
+          <h2 id="information">2. Information handled by the application</h2>
+          <p>Depending on the features you use, ClassJot may process your name, subject, school name, optional profile photograph, and information used to protect or recover your on-device account. Teachers may enter students’ names, class information, seating assignments, attendance records, marks, assessment components, classroom points, private notes, timetables, and lesson records.</p>
+          <p>This information is entered or imported by the teacher for classroom administration. Teachers should only enter information they are authorized to handle under their school’s rules and applicable law, and should avoid unnecessary sensitive student information in free-text notes.</p>
+        </section>
+
+        <section aria-labelledby="storage">
+          <h2 id="storage">3. Local storage and data use</h2>
+          <p>In the Android version reviewed for this policy (version 1.0.17), ClassJot stores its main records locally in an encrypted application-private vault. The vault uses AES-256-GCM encryption; keys are derived from the teacher’s password using PBKDF2-SHA256. The application uses the information to provide the features selected by the teacher.</p>
+          <p>ClassJot does not require an online account or developer-hosted cloud service for these features. The reviewed version does not contain advertising, analytics, or a mechanism that automatically uploads classroom records to ClassJot’s developer. The developer cannot remotely view your local vault or recover your password.</p>
+          <p>Depending on device settings and Android backup or transfer behavior, the operating system may handle application data separately. Any such copies are distinct from exports or backups intentionally created through ClassJot. See also Section 5.</p>
+        </section>
+
+        <section aria-labelledby="security">
+          <h2 id="security">4. Security and biometric unlock</h2>
+          <p>ClassJot encrypts the main local vault and offers a password-based lock. On supported Android devices, optional fingerprint unlocking is handled through Android’s biometric and keystore facilities. ClassJot does not receive or store fingerprint images or templates.</p>
+          <p>No security method can eliminate every risk. Protect your device, password, recovery code, and exported files, and keep a tested encrypted backup in a safe location.</p>
+        </section>
+
+        <section aria-labelledby="exports">
+          <h2 id="exports">5. Exports, backups, and sharing</h2>
+          <p>You can export class records and reports into formats such as CSV, Excel, and JSON. You can also create a password-protected encrypted backup. Some optional exports, including a legacy unencrypted JSON backup, contain <strong>readable personal or student information</strong>; protect these files carefully.</p>
+          <p>When you choose a destination through the Android file picker, share sheet, email application, cloud drive, or another service, that destination may receive or store the exported file under its own privacy practices. These transfers are initiated by you, not by automatic ClassJot synchronization. Deleting a record from ClassJot does not delete files you previously exported or backups held outside the app.</p>
+        </section>
+
+        <section aria-labelledby="retention">
+          <h2 id="retention">6. Data retention and deletion</h2>
+          <p>The information in ClassJot remains on your device until you edit or delete it, reset the local application account, or remove the application, subject to device backup and recovery behavior. ClassJot includes a <strong>Reset application</strong> function that deletes the local account and application vault after confirmation. Previously exported files, separately saved backups, and copies created by the operating system or other services must be managed separately by the person who created or controls them.</p>
+          <p>Because the account in the reviewed version exists only on the device and is not registered on a ClassJot server, the developer has no server-side teacher or student account records to erase on request. For questions about deletion, contact the developer using the address below.</p>
+        </section>
+
+        <section aria-labelledby="third-party">
+          <h2 id="third-party">7. Third-party services</h2>
+          <p>ClassJot uses bundled software components to operate the local application and handle files. The reviewed version does not integrate advertising networks or analytics services. Android system components, the Google Play Store, and services you choose for exporting or sharing files may process data under their own terms and privacy policies.</p>
+        </section>
+
+        <section aria-labelledby="children">
+          <h2 id="children">8. Children’s information</h2>
+          <p>Teachers may enter student information, including information about minors, as part of their professional work. ClassJot is not intended to be used by children directly. Teachers and educational institutions are responsible for using student information appropriately, limiting access, and following applicable privacy and education requirements.</p>
+        </section>
+
+        <section aria-labelledby="changes">
+          <h2 id="changes">9. Changes to this policy</h2>
+          <p>This policy may be revised when ClassJot’s features or data practices change. The updated version will show a new effective date and be made available on the ClassJot privacy-policy page. Material changes will be communicated appropriately.</p>
+        </section>
+
+        <section aria-labelledby="contact">
+          <h2 id="contact">10. Contact</h2>
+          <div class="contact-grid">
+            <div>Developer</div><div>Eram</div>
+            <div>Privacy email</div><div><a href="mailto:er.am.1005@gmail.com">er.am.1005@gmail.com</a></div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer class="container footer">© 2026 ClassJot · Privacy Policy</footer>
+</body>
+</html>
